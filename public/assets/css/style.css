@@ -1,0 +1,197 @@
+@import url(./root.css);
+@import url(./utils.css);
+
+#search-section {
+  background-color: white;
+  height: 100vh;
+  transition: 1.2s ease-in-out;
+  z-index: 99;
+}
+#search-section .fa-xmark::before {
+  font-size: 5rem;
+  color: rgb(29, 29, 29);
+  position: absolute;
+  top: 9%;
+  right: 6%;
+  transition: 1s ease-in-out;
+}
+#search-section .fa-xmark:hover::before {
+  transform: rotate(360deg); /* Corrected from 'rotate: 360deg' */
+}
+#search-section .search-bar input {
+  width: 88%;
+  background: transparent;
+  font-size: 7rem;
+  border-bottom: 2px solid rgb(27, 27, 27);
+  padding: 1rem 2rem;
+  color: rgb(23, 23, 23);
+}
+#search-section .search-bar input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+#search-section .search-bar input::-moz-placeholder {
+  color: rgb(170, 166, 166);
+}
+#search-section .search-bar input::placeholder {
+  color: rgb(170, 166, 166);
+}
+#search-section .search-bar input::-moz-placeholder {
+  color: rgb(170, 166, 166);
+}
+#search-section .search-bar .fa-magnifying-glass::before {
+  font-size: 7rem;
+  color: rgb(29, 29, 29);
+}
+
+#hero-img {
+  width: 70%;
+  border-radius: 30px;
+}
+
+.content-box {
+  top: 20%;
+  height: 12vw;
+  background: white;
+  width: 45vw;
+  font-size: 3rem;
+  padding: 3rem 0 3rem 10rem;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 3px 6px 30px 3px var(--shadow-color);
+}
+
+#filter-section {
+  top: 60%;
+  left: 10%;
+}
+
+#buy-rent {
+  display: flex;
+  height: 10vh;
+  width: 10vw;
+  font-size: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+#buy-rent button {
+  padding: 1.5rem 3rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+#buy-rent #buy-btn {
+  background-color: var(--primary-color);
+  color: var(--text2-color);
+  margin-right: 7rem;
+  box-shadow: 2px 3px 15px -1px #000f6d;
+}
+#buy-rent #rent-btn {
+  background-color: transparent;
+  color: black;
+  border: 2px solid var(--primary-color);
+  box-shadow: 2px 3px 15px -1px #000f6d;
+  transition: 0.6s ease-in;
+}
+#buy-rent #rent-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--text2-color);
+}
+
+#filter {
+  margin-top: 9rem;
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: -1px 5px 30px -9px var(--shadow-color);
+}
+#filter div {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#filter .fa-house::before,
+#filter .fa-location-dot::before,
+#filter .fa-indian-rupee-sign::before {
+  font-size: 2.4rem;
+  margin: 0 1rem;
+}
+
+#input-field{
+  padding: .3rem .5rem;
+}
+#filter #search-btn {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  color: var(--text2-color);
+}
+
+#explore-section h2 {
+  margin-top: 50rem;
+  border-top: 2px solid #1d1d1d;
+  border-bottom: 2px solid #1d1d1d;
+  height: 20rem;
+  font-size: 5rem;
+}
+#explore-section .explore-card {
+  height: 20vw;
+  width: 27vw;
+  margin-top: 15rem;
+  box-shadow: 7px 6px 18px -5px rgba(1, 23, 66, 0.86);
+  border-radius: 15px;
+}
+#explore-section .explore-card:nth-child(1) {
+  background: url(../images/chandigar.jpeg) no-repeat center center/cover;
+}
+#explore-section .explore-card:nth-child(2) {
+  background: url(../images/delhi.jpg) no-repeat center center/cover;
+}
+#explore-section .explore-card:nth-child(3) {
+  background: url(../images/mumbai.jpeg) no-repeat center center/cover;
+}
+#explore-section .explore-card h3 {
+  font-size: 3.3rem;
+  margin-bottom: 2rem;
+  color: #ebebeb;
+  letter-spacing: 6px;
+}
+#explore-section .explore-card button {
+  background: #c6c2ff;
+  padding: 2rem 6rem;
+  font-size: 1.5rem;
+}
+
+/* Ressponsiveness  */
+@media (max-width:1000px) {
+  .content-box {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width:700px) {
+  #filter-section {
+    position: static;
+  }
+  #buy-rent button {
+    border-radius: 7px;
+  }
+  #filter{
+    margin-top: 0;
+  }
+  #filter  #flat_no, #budget_no, #search-btn{
+    font-size: 1.5rem;
+  }
+  #explore-section h2{
+    margin-top: 30rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #hero-img {
+    border-radius: 20px;
+}
+#filter{
+  width: 90%;
+}
+#input-field{
+  width: 70%;
+}
+}

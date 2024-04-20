@@ -1,0 +1,66 @@
+@import url("root.css");
+@import url("utils.css");
+
+.wapper {
+    height: 100vh;
+}
+header {
+    height: 15vh;
+}
+
+form{
+    background: white;
+    box-shadow: -1px 2px 40px -4px var( --shadow-color);
+    border-radius: 30px;
+    padding: 5rem 10rem;
+    
+    h3{ 
+        font-size: 3.3rem;
+        font-weight: 800;
+        margin-bottom: 3rem;
+}
+label{
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+input{
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+input:nth-last-child(1) {
+    width: 80%;
+    box-shadow: 3px 3px 30px -5px var(--shadow-color);
+    border-radius: 15px;
+}
+div:nth-last-child(1) {
+        width: 80%;
+        background: transparent;
+        box-shadow: 3px 3px 30px -5px var( --shadow-color);
+        border-radius: 15px;
+
+        input {
+            width: 95%;
+            border-radius: 15px;
+        }
+        .fa-eye-slash::before {
+            font-size: 2.1rem;
+            color: blue;
+          }
+        .fa-eye::before {
+            font-size: 2.1rem;
+            color: blue;
+          }
+}
+button{
+    border: none;
+    background: var(--primary-color);
+    color: var(--text2-color);
+    font-size: 1.8rem;
+    padding: 2.4rem 6rem;
+    border-radius: 15px;
+    justify-self: center;
+    margin-top: 3rem;
+}
+
+}

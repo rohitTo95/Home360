@@ -1,0 +1,155 @@
+header {
+    height: 15vh;
+  }
+  header #header-logo {
+    width: 15rem;
+  }
+  #header_nav {
+    width: 30%;
+    font-size: 1.8rem;
+  }
+  #header_nav ul li {
+    margin: 0 1rem;
+  }
+  
+  #search_login {
+    width: 30%;
+    gap: 1rem;
+  }
+  #search_login input{
+    width: 95%;
+  }
+  .search-box {
+    border-radius: 15px;
+    height: 4rem;
+    background: white;
+    width: 70%;
+    box-shadow: 4px 4px 2px 2px var(--shadow-color);
+    padding: 0 0.9rem;
+  }
+  
+  .fa-magnifying-glass:before,
+  .fa-search:before {
+    font-size: 2.1rem;
+    color: #323232;
+  }
+  
+  #search-field {
+    margin-left: 0.7rem;
+  }
+  
+  #login-btn {
+    font-size: 1.5rem;
+    border-radius: 15px;
+    padding: 1rem 2.4rem;
+    background: var(--primary-color);
+    color: var(--text2-color);
+  }
+
+/* Hambergar Menu  */
+
+.responsive_nav
+{
+  display: block;
+  /* position: relative;
+  top: 5rem;
+  left: 5rem; */
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.responsive_nav a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+.responsive_nav a:hover
+{
+  color: tomato;
+}
+
+.responsive_nav .hamberger span
+{
+  display: block;
+  width: 5rem;
+  height: .5rem;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #202020;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.responsive_nav .hamberger span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+.responsive_nav .hamberger span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menu
+{
+  position: absolute;
+  width: 30rem;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 5rem;
+  padding-top: 125px;
+  left: 158vw;
+  top: 0;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+
+/* Responsiveness  */
+@media (max-width: 700px) {
+  header{
+    height: 12vh;
+  }
+  #header_nav {
+    display: none;
+  }
+  #search_login {
+    width: 50%;
+  }
+  .search-box {
+    /* width: 100%;s */
+    box-shadow: 2px 2px 9px -1px var(--shadow-color);
+    padding: 0 1.2rem;
+}
+  #login-btn{
+    display: none;
+  }
+  .responsive_nav{
+    display: block !important;
+  }
+}

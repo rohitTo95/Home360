@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Page</title>
+
+    <link rel="stylesheet" href="/static/css/all.min.css" />
+    <link rel="stylesheet" href="<%= url %>/css/error_page.css" />
+    <link rel="stylesheet" href="<%= url %>/css/header_log_out.css" />
+    <link
+      rel="shortcut icon"
+      href="<%= url %>/images/favicon.png"
+      type="image/x-icon"
+    />
+    <script defer src="<%= url %>/js/hamberger.js"></script>
+  </head>
+  <body>
+    <div class="wapper">
+      <header class="flex space-between align-center w-100 def-padding">
+        <a href="<%= url %>" class="cursor-pointer"
+          ><img id="header-logo" src="<%= url %>/images/Logo.png" alt="Logo"
+        /></a>
+        <nav id="header_nav">
+          <ul class="flex space-between align-center">
+            <li><a href="">Home</a></li>
+            <li><a href="">Sell</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="search_login" class="flex space-between align-center">
+          <div class="search-box flex align-center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="search"
+              name="search"
+              id="search-field"
+              class="outline-none border-none"
+              placeholder="Search"
+              readonly
+            />
+          </div>
+          <button id="login-btn" class="outline-none border-none cursor-pointer">Login</button>
+          <nav class="responsive_nav none">
+            <div class="hamberger cursor-pointer" hamberger-status="closed">
+             <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <ul id="menu" class="flex flex-column align-center space-evenly">
+              <li> <a href="#">Home</a> </li>
+              <li> <a href="#">About</a> </li>
+              <li> <a href="#">Contact</a> </li>
+            </ul>
+          </nav>
+        </div>
+      
+        
+      </header>
+      <main class="flex flex-column align-center space-evenly">
+         <img src="<%= url %>/images/404.png" alt="Page Not Found">
+         <h2>ERROR <span>404</span></h2>
+         <p>Page Not Found</p>
+      </main>
+    </div>
+  </body>
+</html>

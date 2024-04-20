@@ -1,0 +1,63 @@
+@import url("root.css");
+@import url("utils.css");
+.wapper {
+  height: 100vh;
+}
+
+header {
+  height: 15vh;
+}
+
+form {
+  background: white;
+  box-shadow: -1px 2px 40px -4px var(--shadow-color);
+  border-radius: 30px;
+  padding: 5rem 10rem;
+}
+form h3 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+form label {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+form input {
+  padding: 2rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+form input:nth-last-child(1) {
+  width: 80%;
+  box-shadow: 3px 3px 30px -5px var(--shadow-color);
+  border-radius: 15px;
+}
+form div:nth-last-child(1) {
+  width: 80%;
+  background: transparent;
+  box-shadow: 3px 3px 30px -5px var(--shadow-color);
+  border-radius: 15px;
+}
+form div:nth-last-child(1) input {
+  width: 95%;
+  border-radius: 15px;
+}
+form div:nth-last-child(1) .fa-eye-slash::before {
+  font-size: 2.1rem;
+  color: blue;
+}
+form div:nth-last-child(1) .fa-eye::before {
+  font-size: 2.1rem;
+  color: blue;
+}
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: var(--text2-color);
+  font-size: 1.8rem;
+  padding: 2.4rem 6rem;
+  border-radius: 15px;
+  justify-self: center;
+  margin-top: 3rem;
+}/*# sourceMappingURL=admin-login-page.css.map */

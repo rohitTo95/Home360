@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello  Admin</title>
+    
+    <link rel="stylesheet" href="/static/css/all.min.css" />
+    <link
+      rel="shortcut icon"
+      href="<%= url %>/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="<%= url %>/css/header_log_out.css" />
+    <link rel="stylesheet" href="<%= url %>/css/admin-login-page.css" />
+    <script defer src="<%= url %>/js/registration.js"></script>
+</head>
+<body>
+    <div class="wapper def-padding">
+        <header class="flex align-center">
+        <a href="<%= url %>" class="cursor-pointer"
+            ><img id="header-logo" src="<%= url %>/images/Logo.png" alt="Logo"
+          /></a>
+        </header>
+        <main>
+        <form action="" method="post" class="grid">
+            <h3>Admin Login</h3>
+            <div class="flex flex-column justify-start">
+            <label for="admin_username">Admin Username</label>
+            <input type="text" name="admin_username" id="admin_username " placeholder="Enter Your Username" class="border-none outline-none mtb-2">
+        </div>
+            <div>
+            <label for="password">Password</label>
+            <div class=" flex space-between align-center pr-3 mtb-2">
+                <input type="password" name="password" id="password" placeholder="Enter Your Password" class="border-none outline-none" input_field_id="password">
+                <i
+                    class="fa-regular fa-eye-slash cursor-pointer"
+                    input_field_id="password"
+                  ></i>
+            </div>
+        </div>
+        <button class="cursor-pointer">Login</button>
+        </form>
+    </main>
+    </div>
+</body>
+</html>

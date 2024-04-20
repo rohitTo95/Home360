@@ -1,0 +1,96 @@
+@import url(./root.css);
+@import url(./utils.css);
+
+.wapper{
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.reg-form{
+    height: 90vh;
+    padding: 0 10rem;
+    border-radius: 30px;
+    background: url("../images/login-bg.png") no-repeat center center / cover;
+    form{
+            background: var(--secondary-color);
+            width: 45%;
+            height: 90%;
+            border-radius: 15px;
+            padding: 5rem;
+            box-shadow: 7px 6px 18px -5px rgb(1 23 66 / 86%);
+
+            div{ 
+                h1{
+                    font-size: 3.6rem;
+                    font-weight: 700;
+            }
+          p{
+            font-size: 1.5rem;
+            color: #575757;
+            margin: .6rem 0 5rem 0;
+        }
+        }
+        .field-inputs{
+            height: 7rem;
+    border-bottom: 2px solid black;
+    input{
+        padding: 1rem;
+        font-size: 2.1rem;   
+        background-color: transparent; 
+    }
+    .fa-envelope::before{
+        font-size: 2.1rem;
+        color: rgb(25, 25, 25);
+    }
+    .fa-lock::before{
+        font-size: 2.1rem;
+        color: rgb(25, 25, 25);
+    }
+    .fa-eye-slash{
+    font-size: 2.1rem;
+    }
+    .fa-eye{
+    font-size: 2.1rem;
+    }
+        }
+        .other-fileds{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 3rem 0;
+                font-size: 1.5rem;
+                font-weight: 400;
+            #remember-me{
+              lable{
+                margin-left: .3rem;
+              }
+            }
+            a{
+            color: blue;
+          }
+        }
+        .primary-reg-btn {
+            border: none;
+            outline: none;
+            background: blue;
+            color: white;
+            width: 100%;
+            height: 10%;
+            font-size: 1.5rem;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 2rem;
+        }
+        .option-register{
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            a{
+                color: blue;
+            }
+        }
+    }
+}
