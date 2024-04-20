@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To Home 360 | Digital To Rality</title>
+
+    <link rel="stylesheet" href="/static/css/all.min.css" />
+    <link rel="stylesheet" href="<%= url %>/css/style.css" />
+    <link rel="stylesheet" href="<%= url %>/css/user_dashboard.css" />
+    <link
+      rel="shortcut icon"
+      href="<%= url %>/images/favicon.png"
+      type="image/x-icon"
+    />
+    <script defer src="<%= url %>/js/script.js"></script>
+  </head>
+  <body>
+    <div class="wapper">
+      <header class="flex space-between align-center w-100 def-padding">
+        <a href="<%= url %>" class="cursor-pointer"
+          ><img id="header-logo" src="<%= url %>/images/Logo.png" alt="Logo"
+        /></a>
+        <nav>
+          <ul class="flex space-between align-center">
+            <li><a href="">Home</a></li>
+            <li><a href="">Sell</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="search_login" class="flex space-between align-center">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="search"
+              name="search"
+              id="search-field"
+              class="outline-none border-none"
+              placeholder="Search"
+              readonly
+            />
+          </div>
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </header>
+      <main>
+        <div id="user-profile">
+          <div id="user-img-section"></div>
+          <form id="user-details-section" action="" method="post">
+            <div
+              id="user-name-field"
+              class="field-inputs w-100 flex align-center"
+            >
+              <i class="fa-solid fa-user"></i>
+              <input type="text" name="name" id="name" value="Rony Sha" />
+            </div>
+            <div class="field-inputs w-100 flex align-center">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                class="border-none outline-none w-100"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="field-inputs w-100 flex align-center">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                class="border-none outline-none w-100"
+                type="number"
+                name="phone_no"
+                id="phone_no"
+                placeholder="89986643467"
+              />
+            </div>
+            <div class="field-inputs w-100 flex align-center">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                class="border-none outline-none w-100"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Your Password"
+              />
+              <i
+                class="fa-regular fa-eye-slash cursor-pointer"
+                input_field_id="password"
+              ></i>
+            </div>
+            <div class="field-inputs w-100 flex align-center">
+              <i class="fa-regular fa-envelope"></i>
+              <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="primary-reg-btn">Update</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

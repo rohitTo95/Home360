@@ -1,0 +1,248 @@
+/* Height  */
+.height-fit-content {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+/* Width  */
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.vw-100 {
+  width: 100vw;
+}
+
+/* Margin */
+/* margin-top */
+.mt-20 {
+  margin-top: 20rem;
+}
+
+/* margin-bottom */
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.mb-20 {
+  margin-bottom: 20rem;
+}
+
+.mb-30 {
+  margin-bottom: 30rem;
+}
+
+/* margin-top-bottom */
+.mtb-10 {
+  margin: 10rem 0;
+}
+.mtb-2 {
+  margin: 2rem 0;
+}
+
+/* Padding  */
+.pl-9 {
+  padding-left: 9rem;
+}
+
+/* padding-right  */
+.pr-3{
+  padding-right: 3rem;
+}
+/* Left-Right */
+.plr-5 {
+  padding: 0 5rem;
+}
+
+/* Position */
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/* Background */
+.background-transparent {
+  background: transparent;
+}
+
+.background-cover {
+  background-size: cover;
+}
+
+.background-repeat {
+  background-repeat: no-repeat;
+}
+
+.background-positon-center {
+  background-position: center;
+}
+
+/* Display */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none !important;
+}
+
+/* display: flex */
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+/* Mega flex classes  */
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid  */
+.auto-flow-column {
+  grid-auto-flow: column;
+}
+
+/* Child Grid Properties */
+.justify-self-end {
+  justify-self: flex-end;
+}
+
+.justify-self-start {
+  justify-self: flex-start;
+}
+
+/* Text  */
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+/* Overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Cursor  */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Border */
+.border-radious-50 {
+  border-radius: 50%;
+}
+
+/* Other Properties  */
+.outline-none {
+  outline: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.resize-none {
+  resize: none;
+}
+
+/* Initialize Position Zero  */
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}/*# sourceMappingURL=utils.css.map */

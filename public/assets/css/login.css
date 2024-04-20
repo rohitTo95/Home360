@@ -1,0 +1,90 @@
+@import url(./root.css);
+@import url(./utils.css);
+.wapper {
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
+}
+
+.reg-form {
+  height: 90vh;
+  padding: 0 10rem;
+  border-radius: 30px;
+  background: url("../images/login-bg.png") no-repeat center center/cover;
+}
+.reg-form form {
+  background: var(--secondary-color);
+  width: 45%;
+  height: 90%;
+  border-radius: 15px;
+  padding: 5rem;
+  box-shadow: 7px 6px 18px -5px rgba(1, 23, 66, 0.86);
+}
+.reg-form form div h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.reg-form form div p {
+  font-size: 1.5rem;
+  color: #575757;
+  margin: 0.6rem 0 5rem 0;
+}
+.reg-form form .field-inputs {
+  height: 7rem;
+  border-bottom: 2px solid black;
+}
+.reg-form form .field-inputs input {
+  padding: 1rem;
+  font-size: 2.1rem;
+  background-color: transparent;
+}
+.reg-form form .field-inputs .fa-envelope::before {
+  font-size: 2.1rem;
+  color: rgb(25, 25, 25);
+}
+.reg-form form .field-inputs .fa-lock::before {
+  font-size: 2.1rem;
+  color: rgb(25, 25, 25);
+}
+.reg-form form .field-inputs .fa-eye-slash {
+  font-size: 2.1rem;
+}
+.reg-form form .field-inputs .fa-eye {
+  font-size: 2.1rem;
+}
+.reg-form form .other-fileds {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.reg-form form .other-fileds #remember-me lable {
+  margin-left: 0.3rem;
+}
+.reg-form form .other-fileds a {
+  color: blue;
+}
+.reg-form form .primary-reg-btn {
+  border: none;
+  outline: none;
+  background: blue;
+  color: white;
+  width: 100%;
+  height: 10%;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.reg-form form .option-register {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.reg-form form .option-register a {
+  color: blue;
+}/*# sourceMappingURL=login.css.map */

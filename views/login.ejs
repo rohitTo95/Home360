@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To Home 360 | Digital To Rality</title>
+
+    <link rel="stylesheet" href="/static/css/all.min.css" />
+    <link rel="stylesheet" href="<%= url %>/css/login.css" />
+    <link
+      rel="shortcut icon"
+      href="<%= url %>/images/favicon.png"
+      type="image/x-icon"
+    />
+    <script defer src="<%= url %>/js/registration.js"></script>
+  </head>
+  <body>
+    <div class="wapper flex justify-center align-center def-padding">
+      <div class="reg-form w-100 flex justify-end align-center">
+        <form action="" method="post">
+            <div>
+            <h1>Login</h1>
+            <p>Enter/Fill Up the details given below to log in</p>
+        </div>
+        <div class="field-inputs w-100 flex align-center">
+            <i class="fa-regular fa-envelope"></i>
+            <input class="border-none outline-none w-100" type="email" name="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="field-inputs w-100 flex align-center">
+            <i class="fa-solid fa-lock"></i>
+            <input class="border-none outline-none w-100" type="password" name="password" id="password" placeholder="Enter Your Password">
+            <i class="fa-regular fa-eye-slash cursor-pointer" input_field_id="password"></i>
+        </div>
+        <div class="other-fileds flex space-between align-center">
+            <div id="remember-me">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <a href="<%= url %>/forgot-password">Forgot Password?</a>
+        </div>
+        <button type="submit" class="primary-reg-btn">Login</button>
+<p class="option-register">Don't have an account? <a href="<%= url %>/register">Register</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

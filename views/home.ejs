@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To Home 360 | Digital To Rality</title>
+
+    <link rel="stylesheet" href="/static/css/all.min.css" />
+    <link rel="stylesheet" href="<%= url %>/css/style.css" />
+    <link rel="stylesheet" href="<%= url %>/css/header_log_out.css" />
+    <link rel="stylesheet" href="<%= url %>/css/footer.css" />
+    <link
+      rel="shortcut icon"
+      href="<%= url %>/images/favicon.png"
+      type="image/x-icon"
+    />
+    <script defer src="<%= url %>/js/script.js"></script>
+    <script defer src="<%= url %>/js/hamberger.js"></script>
+  </head>
+  <body>
+
+    <div class="wapper">
+      <header class="flex space-between align-center w-100 def-padding">
+        <a href="<%= url %>" class="cursor-pointer"
+          ><img id="header-logo" src="<%= url %>/images/Logo.png" alt="Logo"
+        /></a>
+        <nav id="header_nav">
+          <ul class="flex space-between align-center">
+            <li><a href="">Home</a></li>
+            <li><a href="">Sell</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="search_login" class="flex space-between align-center">
+          <div class="search-box flex align-center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="search"
+              name="search"
+              id="search-field"
+              class="outline-none border-none"
+              placeholder="Search"
+              readonly
+            />
+          </div>
+          <button id="login-btn" class="outline-none border-none cursor-pointer">Login</button>
+          <nav class="responsive_nav none">
+            <div class="hamberger cursor-pointer" hamberger-status="closed">
+             <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <ul id="menu" class="flex flex-column align-center space-evenly">
+              <li> <a href="#">Home</a> </li>
+              <li> <a href="#">About</a> </li>
+              <li> <a href="#">Contact</a> </li>
+            </ul>
+          </nav>
+        </div>
+      
+        
+      </header>
+      <main>
+        <section
+          id="search-section"
+          class="w-100 def-padding none flex-column align-center justify-center absolute top-0 left-0"
+        >
+          <i id="close-btn" class="fa-solid fa-xmark cursor-pointer"></i>
+          <div class="search-bar w-80 flex align-center space-between">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="search"
+              name="search"
+              id="search-field"
+              class="outline-none border-none"
+              placeholder="Search"
+            />
+          </div>
+          <div id="results"></div>
+        </section>
+        <section id="hero-section" class="z-index1">
+          <div class="w-100 def-padding relative flex align-end flex-column">
+            <img src="<%= url %>/images/hero.png" alt="Hero image" id="hero-img" />
+            <div class="content-box absolute left-0 flex justify-center align-start flex-column text-capitalize">
+                <span>Lets find</span>
+                <span>the house you need!</span> 
+            </div>
+            <div id="filter-section" class="absolute">
+              <div id="buy-rent">
+                <button class="border-none outline-none cursor-pointer" id="buy-btn">Buy</button>
+                <button class="border-none outline-none cursor-pointer" id="rent-btn">Rent</button>
+              </div>
+              <form id="filter" method="get" action="" class="flex justify-center align-center">
+                <div id="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input id="input-field" type="text" placeholder="Add More" class="border-none"/>
+                </div>
+                <div id="flat">
+                  <i class="fa-solid fa-house"></i>
+                  <select name="flat_no" id="flat_no" class="border-none outline-none">
+                    <option value="">Flat</option>
+                    <option value="1bhk" >1 BHK</option>
+                    <option value="1bhk">1 BHK</option>
+                    <option value="2bhk">2 BHK</option>
+                    <option value="3bhk">3 BHK</option>
+                    <option value="4bhk">4BHK</option>
+                  </select>
+                </div>
+                <div id="budget">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                  <select name="budget_no" id="budget_no" class="border-none outline-none">
+                    <option value="">Budget</option>
+                    <option value="100000">100000</option>
+                    <option value="400000">400000</option>
+                    <option value="4000000">4000000</option>
+                    <option value="9000000">9000000</option>
+                  </select>
+                </div>
+                <button type="submit" id="search-btn" class="outline-none border-none cursor-pointer">Search</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section id="explore-section">
+          <h2 class="flex justify-center align-center">Explore houses in top-tier cities</h2>
+          <div id="explore-card-wapper" class="def-padding mt-3 flex space-between align-center">
+            <div class="explore-card flex align-center justify-center flex-column">
+              <h3>Chandigarh</h3>
+              <div class="card-content">
+                  <button class="explore-btn cursor-pointer border-none outline-none">Explore Now</button>
+              </div>
+            </div>
+            <div class="explore-card flex align-center justify-center flex-column">
+              <h3>Chandigarh</h3>
+              <div class="card-content">
+                  <button class="explore-btn cursor-pointer border-none outline-none">Explore Now</button>
+              </div>
+            </div>
+            <div class="explore-card flex align-center justify-center flex-column">
+              <h3>Chandigarh</h3>
+              <div class="card-content">
+                  <button class="explore-btn cursor-pointer border-none outline-none">Explore Now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section id="footer-section" class="w-100 flex align-center space-between def-padding flex-column">
+          <div id="topBar" class="w-100 flex space-between align-center">
+            <li>
+              <a href="#">Contact Us</a>
+              <i class="fa-solid fa-angle-right"></i>
+            </li>
+            
+            <a href="<%= url %>" class="cursor-pointer"
+              ><img id="footer-logo" src="<%= url %>/images/footer-logo.png" alt="Logo"
+            /></a>
+            </div>
+          <div id="midBar" class="w-100 flex space-between align-center">
+            <i class="fa-brands fa-youtube cursor-pointer"></i>
+            <i class="fa-brands fa-x-twitter cursor-pointer"></i>
+            <i class="fa-brands fa-linkedin cursor-pointer"></i>
+            <i class="fa-brands fa-instagram cursor-pointer"></i>
+            </div>
+          <div id="contactBar" class="flex space-between align-center">
+            <p class="text-capitalize">need help?</p>
+            <span id="phone-col" class="flex space-between align-center">
+              <i class="fa-solid fa-phone"></i>
+              <p>999-999-999</p>
+            </span>
+            <span id="email-col" class="flex space-between align-center">
+              <i class="fa-solid fa-envelope"></i>
+              <p>home360.helpdesk@gmail.com</p>
+            </span>
+          </div>
+          <div id="bottomBar" class="w-100 flex space-between align-center mt-3">
+            <p>© 2024 Home360. All rights reserved.</p>
+            <nav>
+              <ul class="flex space-between align-center">
+                <li><a href="">Cookie policy</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Developers</a></li>
+                </ul>
+            </nav>
+            </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

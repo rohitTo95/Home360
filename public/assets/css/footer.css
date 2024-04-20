@@ -1,0 +1,75 @@
+#footer-section {
+    margin-top: 30rem;
+    background-color: var(--secondary-color);
+    color: var(--text2-color);
+    height: 80vh;
+  }
+  #footer-section #topBar {
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 5rem 0rem;
+  }
+  #footer-section #topBar img {
+    width: 24rem;
+  }
+  #footer-section #midBar {
+    width: 70%;
+  }
+ .fa-youtube:before, .fa-x-twitter:before,
+ .fa-linkedin:before,  .fa-instagram:before {
+    font-size: 4.5rem;
+  }
+ 
+  #footer-section #contactBar {
+    margin-top: 6rem;
+    background: var(--primary-color);
+    height: 15%;
+    width: 80%;
+    border-radius: 73px;
+    padding: 0 7rem;
+  }
+  #footer-section #contactBar p {
+    color: var(--text2-color);
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  #footer-section #contactBar span {
+    background: white;
+    border-radius: 30px;
+  }
+  #footer-section #contactBar span p {
+    color: black;
+  }
+  #footer-section #contactBar #phone-col {
+    width: 26%;
+    padding: 1rem 3.3rem;
+  }
+  #footer-section #contactBar #phone-col .fa-phone::before {
+    font-size: 2rem;
+  }
+  #footer-section #contactBar #phone-col p {
+    font-size: 2rem;
+  }
+  #footer-section #contactBar #email-col {
+    width: 46%;
+    padding: 1rem 3.3rem;
+  }
+  #footer-section #contactBar #email-col .fa-envelope::before {
+    font-size: 2rem;
+  }
+  #footer-section #contactBar #email-col p {
+    font-size: 2rem;
+  }
+  
+  #bottomBar {
+    padding: 3rem 0;
+  }
+  #bottomBar p {
+    font-size: 2rem;
+  }
+  #bottomBar nav {
+    width: 30%;
+  }
+  #bottomBar nav ul li {
+    font-size: 1.5rem;
+  }
